@@ -1,7 +1,7 @@
 "use client";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useState } from "react";
 
 type FromValues = {
@@ -69,9 +69,11 @@ export const SignUp = () => {
         <div className="text-zinc-500 text-base font-normal font-['Inter'] leading-normal">
           Already have an account?
         </div>
+        <Link href="/login/login">
         <div className="text-blue-600 text-base font-normal font-['Inter'] leading-normal">
           Log in{" "}
         </div>
+        </Link>
       </div>
     </div>
   );

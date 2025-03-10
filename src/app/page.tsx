@@ -32,8 +32,10 @@
 //If checked red like this, it means i've completed it.
 "use client";
 import axios from "axios";
-import { SignUp } from "./(orders)/_features_/sign-up";
+import Link from "next/link";
+import { SignUp } from "./pages/signup";
 import { useEffect } from "react";
+
 import { FoodMenu } from "./(food-menu)/foot-menu";
 
 export default function Home() {
@@ -54,7 +56,6 @@ export default function Home() {
     <div className="w-full h-[1100px]">
       <div className="w-[1440px] h-[1024px] relative overflow-hidden">
         <SignUp />
-        <FoodMenu />
       </div>
     </div>
   );
